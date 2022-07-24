@@ -1,6 +1,6 @@
 {
-  "name": "@mancix/autocomplete",
-  "version": "6.1.0",
+  "name": "@mancix/autocomplete-tab",
+  "version": "0.1.0",
   "description": "Autocompletion for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
