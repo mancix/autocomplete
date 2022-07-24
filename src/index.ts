@@ -32,7 +32,7 @@ export function autocompletion(config: CompletionConfig = {}): Extension {
 ///  - ArrowUp: [`moveCompletionSelection`](#autocomplete.moveCompletionSelection)`(false)`
 ///  - PageDown: [`moveCompletionSelection`](#autocomplete.moveCompletionSelection)`(true, "page")`
 ///  - PageDown: [`moveCompletionSelection`](#autocomplete.moveCompletionSelection)`(true, "page")`
-///  - Enter: [`acceptCompletion`](#autocomplete.acceptCompletion)
+///  - Tab: [`acceptCompletion`](#autocomplete.acceptCompletion)
 export const completionKeymap: readonly KeyBinding[] = [
   {key: "Ctrl-Space", run: startCompletion},
   {key: "Escape", run: closeCompletion},
@@ -40,7 +40,7 @@ export const completionKeymap: readonly KeyBinding[] = [
   {key: "ArrowUp", run: moveCompletionSelection(false)},
   {key: "PageDown", run: moveCompletionSelection(true, "page")},
   {key: "PageUp", run: moveCompletionSelection(false, "page")},
-  {key: "Enter", run: acceptCompletion}
+  {key: "Tab", run: acceptCompletion}
 ]
 
 const completionKeymapExt = Prec.highest(keymap.computeN([completionConfig], state => 

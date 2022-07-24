@@ -2,6 +2,8 @@
 
 [ [**WEBSITE**](https://codemirror.net/) | [**DOCS**](https://codemirror.net/docs/ref/#autocomplete) | [**ISSUES**](https://github.com/codemirror/dev/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/autocomplete/blob/main/CHANGELOG.md) ]
 
+This is a fork of @codemirror/autocomplete that set "Tab" as default completionKeymap instead of "Enter".
+
 This package implements autocompletion for the
 [CodeMirror](https://codemirror.net/) code editor.
 
